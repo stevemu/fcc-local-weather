@@ -47,6 +47,12 @@ const Format = styled.a`
   }
 `;
 
+
+const WeatherIcon = ({name}) => {
+    return <i style={{marginTop: "30px", fontSize: "30px"}} className={`wi ${name}`} />;
+};
+
+
 class App extends Component {
 
     state = {
@@ -123,9 +129,6 @@ class App extends Component {
     }
 }
 
-const WeatherIcon = ({name}) => {
-  return <i style={{marginTop: "30px", fontSize: "30px"}} className={`wi ${name}`} />;
-};
 
 // const WeatherIconStyled = styled(WeatherIcon)`
 //   display: block;
